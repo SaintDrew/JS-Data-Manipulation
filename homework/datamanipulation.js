@@ -59,9 +59,20 @@ const m4 = 5;
 
 // Q1 Check if all numbers are disivible by 5
 
+// now to check if divisble by 5 
 const divBy5 = (m1 % 5) + (m2 % 5) + (m3 % 5) + (m4 % 5) ===0
-// now to check if divisble by 5 when I apply change
-console.log(true)
-// true
+console.log(divBy5) // true
+
+// Q2 Check if the first number is larger than the last
+const a = "10";
+const b = "5";
+console.log(a > b); // true 
+
+// Q3 Accomplish the following arithmetic chain:
+// Subtract the first number from the second number.
+// Multiply the result by the third number.
+// Find the remainder of diving the result by the fourth number.
+
+
 
 
