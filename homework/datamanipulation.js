@@ -64,9 +64,11 @@ const divBy5 = (m1 % 5) + (m2 % 5) + (m3 % 5) + (m4 % 5) ===0
 console.log(divBy5) // true
 
 // Q2 Check if the first number is larger than the last
-const a = "10";
-const b = "5";
-console.log(a > b); // true 
+const a = 10;
+const b = 15;
+const c = 20;
+const d = 5;
+console.log(a > d); // true 
 
 // Q3 Accomplish the following arithmetic chain:
 // Subtract the first number from the second number.
