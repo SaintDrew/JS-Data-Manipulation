@@ -6,23 +6,25 @@ const n2 = 15;
 const n3 = 20;
 const n4 = 5;
 
-// Check one: add up to 50
+// Check 1: add up to 50
 // This is a fairly simple operation using
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
+console.log(isSum50) // true
 
-// Check two: at least two odd numbers
+// Check 2: at least two odd numbers
 // Here, we use modulus to check if something is odd.
 // Since % 2 is 0 if even and 1 if odd, we can use
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
+console.log(isTwoOdd) // true
 
-// Check three: no number larger than 25
+// Check 3: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 
-// Check four: all unique numbers
+// Check 4: all unique numbers
 // This is long, and there are more efficient
 // ways of handling it with other data structures
 // that we will review later.
@@ -41,7 +43,24 @@ console.log(isValid);
 // but it SHOULD NOT be done this way. As programmers,
 // we break things into small, manageable pieces so that
 // they can be better understood, scaled, and maintained.
-const dontDoThis = ((n1 + n2 + n3 + n4) == 50) && 
-  ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
-  !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
-  (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
+    ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) &&
+    !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) &&
+    (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+    // Math Problems and Check results 
+
+    // The initial numbers that must be verified.
+const m1 = 11;
+const m2 = 16;
+const m3 = 21;
+const m4 = 6;
+
+// Q1 Check if all numbers are disivible by 5
+
+const divBy5 = (m1 % 5) + (m2 % 5) + (m3 % 5) + (m4 % 5) ===0
+// now to check if not divisble by 5 when I apply change
+console.log(divBy5)
+
+
