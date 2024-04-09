@@ -52,15 +52,16 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
     // Math Problems and Check results 
 
     // The initial numbers that must be verified.
-const m1 = 11;
-const m2 = 16;
-const m3 = 21;
-const m4 = 6;
+const m1 = 10;
+const m2 = 15;
+const m3 = 20;
+const m4 = 5;
 
 // Q1 Check if all numbers are disivible by 5
 
 const divBy5 = (m1 % 5) + (m2 % 5) + (m3 % 5) + (m4 % 5) ===0
-// now to check if not divisble by 5 when I apply change
+// now to check if divisble by 5 when I apply change
 console.log(divBy5)
+// true
 
 
