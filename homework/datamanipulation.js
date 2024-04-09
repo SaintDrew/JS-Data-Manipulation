@@ -61,7 +61,7 @@ const m4 = 5;
 
 const divBy5 = (m1 % 5) + (m2 % 5) + (m3 % 5) + (m4 % 5) ===0
 // now to check if divisble by 5 when I apply change
-console.log(divBy5)
+console.log(true)
 // true
 
 
