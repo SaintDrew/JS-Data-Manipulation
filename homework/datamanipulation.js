@@ -57,9 +57,7 @@ const m2 = 15;
 const m3 = 20;
 const m4 = 5;
 
-// Q1 Check if all numbers are disivible by 5
-
-// now to check if divisble by 5 
+// Q1 now to check if divisble by 5 
 const divBy5 = (m1 % 5) + (m2 % 5) + (m3 % 5) + (m4 % 5) ===0
 console.log(divBy5) // true
 
@@ -73,7 +71,13 @@ console.log(a > d); // true
 // Q3 Accomplish the following arithmetic chain:
 // Subtract the first number from the second number.
 // Multiply the result by the third number.
-// Find the remainder of diving the result by the fourth number.
+// Find the remainder of dividing the result by the fourth number.
+const a1= 10;
+const b1 = 15;
+const c1 = 20;
+const d1 = 5;
+console.log(b1 - a1) * c1 % d1; 
+
 
 
 
