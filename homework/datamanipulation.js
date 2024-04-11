@@ -140,3 +140,7 @@ console.log('at 55mph, gallons required: ' + gal1 + '. \n' +
 // Will your budget be enough to cover the fuel expense // 
 // First we calculate total distance / miles per gallon that gives how many gallons needed .. second step is to calculate total distance /mph that gives time .. both these will give budget estimation for us to compare the result
 console.log(' at 55mph, the budget needed: ' + time1 + ' .\n')
+
+
+
+console.log( ${velocity} miles/h we consume ${gallons} gallons) 
