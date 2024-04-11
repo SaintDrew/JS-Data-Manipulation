@@ -61,7 +61,8 @@ const m4 = 5;
 
 // Q1 now to check if divisble by 5 
 let isDivisibleby5 = true;
-if ((m1 % 5) == 0 && (m2 % 5) == 0 (m3 % 5) ==0 (m4 % 5) ===0) { // if remanider of dividing by 5 is 0., divides evenly
+
+if ((m1 % 5) == 0 && (m2 % 5) == 0 && (m3 % 5) == 0 && (m4 % 5) == 0) { // if remanider of dividing by 5 is 0., divides evenly
     isDivisibleby5 = true;
 } else {
     isDivisibleby5 = false;
@@ -99,16 +100,14 @@ console.log(result); // -20
 
 // Q4 Change the way that isOver25 calculates so that we do need to use the NOT operator (!) in other logic comparisons. Rename the varirable as appropriate. 
 
-const myIsOver25 = !((a1 > 25) || ( b2 > 25) || (c1 > 25) || (d1 > 25)); // Now it seems if ANY of the numbers are abover 25, return true, then with (!) here, it'll return false, since we want
+const myIsOver25 = !((a1 > 25) || ( b1 > 25) || (c1 > 25) || (d1 > 25)); // Now it seems if ANY of the numbers are abover 25, return true, then with (!) here, it'll return false, since we want
 // to make sure that NONE of the numbers are above 25. 
 
 console.log(myIsOver25); // Orginally will print out 'true,' because none of the numbers are above 25 currently. Once a number is changed to be over 25, will become false.
 
-
-
-
-
+////////////////////////////////////////////////
 // Part 2 : Practical Math //
+
 let distance = 1500 
 
 let mph1= 55 // 55 miles per hour
@@ -128,4 +127,8 @@ let gal2 = (distance / mph60) // gallons for entire trip at 60 mph
 let gal3 = (distance / mph75) // gallons for entire trip at 75 mph 
 
 // How many gallons of fuel will need for the entrie trip //
-console.log('at 55mph, gallons required:' + gal1 + '. \n' )
+console.log('at 55mph, gallons required: ' + gal1 + '. \n' +
+'at 60mph, gallons required: ' + gal2 + ' \n'+ 
+'at 75mph, gallons required: ' + gal3 + '\n') 
+
+// Will your budget be enough to cover the fuel expense // 
