@@ -126,6 +126,12 @@ let gal1 = (distance / mph55) // gallons for entire trip at 55 mph
 let gal2 = (distance / mph60) // gallons for entire trip at 60 mph
 let gal3 = (distance / mph75) // gallons for entire trip at 75 mph 
 
+let time1 = (distance / mph1) // time of trip when driving at this speed 55 miles per hour
+let time2 = (distance / mph2) // time of trip when driving at this speed 60 miles per hour
+let time3 = (distance / mph3) // time of trip when driving at this speed 75 miles per hour
+
+let trip1 = (gal1 / time1) // 
+
 // How many gallons of fuel will need for the entrie trip //
 console.log('at 55mph, gallons required: ' + gal1 + '. \n' +
 'at 60mph, gallons required: ' + gal2 + ' \n'+ 
