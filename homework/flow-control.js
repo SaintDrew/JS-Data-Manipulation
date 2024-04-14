@@ -39,5 +39,11 @@ if (growth = 20 * 2 * week)
     let week2 = 2
     if (growth2 = 20 * 2 * week2)
     {
-        console.log(${growth2} : Week 2 Growth)}
-    
+        console.log(`${growth2} : Week 2 Growth`)}
+if ( growth2 > TotalCapacity * 0.8 ){
+    console.log("Pruned : Week 2")
+} else if (growth2 > TotalCapacity * 0.5){
+    console.log("Monitored : Week 2")
+} else { console.log("Planted : Week 2")}
+
+
