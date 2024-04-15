@@ -65,3 +65,34 @@ const newPlantsWeek2 = newPlants * 2;
 console.log(newPlantsWeek2)
 // 200 plants
 
+const newPlantsWeek3 = newPlantsWeek2 * 2;
+console.log(newPlantsWeek3)
+// 400 plants 
+
+const newPlantsWeek4 = newPlantsWeek3 * 2;
+console.log(newPlantsWeek3)
+// 800 plants 
+
+const newPlantsWeek5 = newPlantsWeek4 * 2;
+console.log(newPlantsWeek5)
+// 1600 plants 
+
+const newPlantsWeek6 = newPlantsWeek5 * 2;
+console.log(newPlantsWeek6)
+// 3200 plants 
+
+const newPlantsWeek7 = newPlantsWeek6 * 2;
+console.log(newPlantsWeek7)
+// 6400 plants 
+
+const newPlantsWeek8 = newPlantsWeek7 * 2;
+console.log(newPlantsWeek8)
+// 12800 plants 
+
+const newPlantsWeek9 = newPlantsWeek8 * 2;
+console.log(newPlantsWeek9)
+// 25600 plants 
+
+const newPlantsWeek10 = newPlantsWeek9 * 2;
+console.log(newPlantsWeek10)
+// 51200 plants 
