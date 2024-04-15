@@ -55,3 +55,13 @@ if (growth3 > TotalCapacity * 0.8){
 } else if (growth2 > TotalCapacity * 0.5){
     console.log("Monitored : Week 3")
 } else { console.log("Planted : Week 3")}
+
+////////////////////////////////////////////
+// Part 2 // 
+
+const newPlants = 100
+
+const newPlantsWeek2 = newPlants * 2;
+console.log(newPlantsWeek2)
+// 200 plants
+
