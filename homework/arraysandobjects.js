@@ -3,63 +3,43 @@ console.log("Ready to TakeOff!!!")
 
 // Part 1: Refactoring Old Code 
 
-const id = [ 42, 57, 63, 98]
-const firstname = ["Bruce", "Clark", "Tony", "Peter"]
-const occupation = ["DarkKnight","Man of Steel", "IronMan", "Friendly Neighborhood"]
-const age = [39, 33, 38, 27]
+let column1 = ["id", "firstname", "occupation", "age"];
+let column2 = [42, "Bruce", "DarkKnight", 39];
+let column3 = [57, "Clark", "Man of Steel", 33];
+let column4 = [63, "Tony", "Ironman", 38];
+let column5 = [98, "Peter", "Friendly Neighborhood", 27];
 
-console.log("ID", "FirstName", "occupation", "Age")
+const data2 = [column1, column2, column3, column4, column5];
 
-for (let i = 0; i < id.length; i++) {
-    console.log(id[i] ,  firstname[i] ,  occupation[i] , age[i])
+for (const cell2 of data2) {
+    console.log(`| ${cell2[0]} | ${cell2[1]} ${cell2[2]} ${cell2[3]} `);
 }
 
-console.log("...............")
+console.log("........................................")
 //////////////////////////////////////
 
 // Part 2: Expanding Functionality 
 
 let csvStr = "ID,firstname,occupation,age\n42,Bruce,DarkKnight,39\n57,Clark,Man of Stell,33\n63,Tony,IronMan,38\n98,Peter,Friendly Neighborhood,27"
 
-let cell1 = "";
-let cell2 = "";
-let cell3 = "";
-let cell4 = "";
-let cell = 1
-let row = 1
-for (let i = 0; i < csvStr.length; i++) {
+lines=[]
+cells=[]
+savedArray=[]
 
-    if (csvStr[i] === ','){
-        cell++
-        continue
-    }
+let columQuantity 
 
-    if (csvStr[i] === "\n") {
-    cell = 1
-    cell1 = "";
-    cell2 = "";
-    cell3 = "";
-    cell4 = "";
-    continue
-    }
+lines=strVar.split("\n")
 
-    switch (cell) {
-        case 1:
-            cell1 += csvStr[i]
-        break
-        case 2: 
-            cell2 += csvStr[i]
-        break
-        case 3:
-            cell3 += csvStr[i]
-        break
-        case 4:
-            cell4 += csvStr[i]
-        break
-    }
+cells=lines[0].split(",")
 
-    if (cell === 4 && csvStr[i + 1] === `\n`) {
-        console.log(cell1, cell2, cell3, cell4);
-        }
-}
-console.log(cell1, cell2, cell3, cell4);
+columQuantity=cells.length
+console.log(`${columQuantity}`)
+
+for(i=0;i<lines.length;i++){}
+
+
+console.log("........................................")
+//////////////////////////////////////
+
+// Part 3: Transforming Data
+
