@@ -64,3 +64,20 @@ for(i=1;i<savedArray.length;i++){
 console.log(objectArray)
 
 
+console.log("........................................")
+//////////////////////////////////////
+
+// Part 4: Sorting and Manipulating Data
+
+objectArray.pop()
+objectArray.splice(1,0,{id: "48", firstname: "Barry", occupation: "Runner", age: "25"})
+objectArray.push({ id: "7", firstname: "Bilbo" , occupation: "None", age: "111"})
+
+console.log(objectArray)
+
+let averageAge=0;
+for(i=0;i<objectArray.length;i++){
+    averageAge+=parseInt(objectArray[i].age)
+}
+
+
