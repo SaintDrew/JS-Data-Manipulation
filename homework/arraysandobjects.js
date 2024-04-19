@@ -79,5 +79,24 @@ let averageAge=0;
 for(i=0;i<objectArray.length;i++){
     averageAge+=parseInt(objectArray[i].age)
 }
+averageAge=averageAge/objectArray.length
+console.log(`The average age is : ${averageAge}`)
+
+
+
+console.log("........................................")
+//////////////////////////////////////
+
+// Part 5: Full Circle
+
+// In order to find the first solution
+let stringReverse=''
+
+stringReverse=Object.keys(objectArray[0]).toString()
+
+for(i=1; i<objectArray.length;i++){
+    stringReverse+='\\n'
+    stringReverse+=Object.values(objectArray[i]).toString()
+}
 
 
