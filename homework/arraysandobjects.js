@@ -28,18 +28,36 @@ savedArray=[]
 
 let columQuantity 
 
-lines=strVar.split("\n")
+lines=csvStr.split("\n")
 
 cells=lines[0].split(",")
 
 columQuantity=cells.length
 console.log(`${columQuantity}`)
 
-for(i=0;i<lines.length;i++){}
-
+for(i=0;i<lines.length;i++){
+    cells=lines[i].split(",")
+    if(cells.length>columQuantity){
+        cells.length=columQuantity
+    }
+    savedArray.push(cells)
+}
+console.log(`This is the 2D array`)
+console.log(savedArray)
 
 console.log("........................................")
 //////////////////////////////////////
 
 // Part 3: Transforming Data
 
+let columheader=savedArray[0]
+let objectArray=[]
+
+for(i=1;i<savedArray.length;i++){
+    objectArray[i-1]={}
+    for(j=o;j<columnQuantity;j++){
+        objectArray[i-1][columnheader[j].toLowerCase()]=savedArray[i][j]
+    }
+}
+
+console.log(objectArray)
