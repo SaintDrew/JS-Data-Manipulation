@@ -50,14 +50,17 @@ console.log("........................................")
 
 // Part 3: Transforming Data
 
-let columheader=savedArray[0]
+let columnheader=savedArray[0]
 let objectArray=[]
+
 
 for(i=1;i<savedArray.length;i++){
     objectArray[i-1]={}
-    for(j=o;j<columnQuantity;j++){
+    for(j=0;j<columQuantity;j++){
         objectArray[i-1][columnheader[j].toLowerCase()]=savedArray[i][j]
     }
 }
 
 console.log(objectArray)
+
+
