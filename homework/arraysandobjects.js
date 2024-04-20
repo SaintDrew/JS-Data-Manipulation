@@ -99,4 +99,7 @@ for(i=1; i<objectArray.length;i++){
     stringReverse+=Object.values(objectArray[i]).toString()
 }
 
+console.log(stringReverse)
+
+
 
